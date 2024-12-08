@@ -2,4 +2,6 @@ Notes
 
 Day 1
     I have forgotten entirely how Python works
-    
+    Part 2
+        Find out how often number from A appears in B, multiple A by that number, add together
+        is left list unique?
