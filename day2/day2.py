@@ -133,8 +133,8 @@ def part_two():
                     unsafe_reports +=1
     
 
-    print("Safe reports: " + str(safe_reports)) # 269
-    print("Unsafe reports: " + str(unsafe_reports)) # 731
+    print("Safe reports: " + str(safe_reports)) # 337
+    print("Unsafe reports: " + str(unsafe_reports)) # 663
 
 
 # part_one()

@@ -32,4 +32,12 @@ Day 2
         if find bad
             then just iterate every variant of line with one removed
             if one bad found, bad, if one safe found, good
-            fuckin lol, that'd work
+            fuckin lol, that'd 
+Day 3
+    Looking for 
+        mul(1-3digits,1-3digits)
+        Need to actually do calculation, then add results
+    Parse string
+        regex? what it's made for, but I suspcet part 2 is designed to screw over people who use regex for this
+
+        mul\([0-9]{1,3},[0-9]{1,3}\)
