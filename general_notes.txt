@@ -1,0 +1,5 @@
+Notes
+
+Day 1
+    I have forgotten entirely how Python works
+    
