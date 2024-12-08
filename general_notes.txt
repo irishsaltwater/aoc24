@@ -4,4 +4,32 @@ Day 1
     I have forgotten entirely how Python works
     Part 2
         Find out how often number from A appears in B, multiple A by that number, add together
-        is left list unique?
+        is left list unique-no, doesn't matter
+Day 2
+    Parse each line, check diff between each number, if greater than 3, unsafe, otherwise safe
+
+    Allowed remove one
+
+    Increase 
+
+    2,4,6,8
+
+    2,2,4,6,8
+
+        
+    6,4,8,10,12
+    3, 12, 10, 8
+    3, 12, 5, 7
+    14, 12, 9, 10, 
+
+    how know remove self or next or previous?
+    know min/max diff two steps is 2-6 - irrelevant
+    18, 
+
+
+    brute force?
+        ugh, omfg
+        if find bad
+            then just iterate every variant of line with one removed
+            if one bad found, bad, if one safe found, good
+            fuckin lol, that'd work
