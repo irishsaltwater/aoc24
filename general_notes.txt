@@ -41,3 +41,13 @@ Day 3
         regex? what it's made for, but I suspcet part 2 is designed to screw over people who use regex for this
 
         mul\([0-9]{1,3},[0-9]{1,3}\)
+Day 4
+    Todo: Stop bruteforcing once I've caught up to current day
+    Find count of XMAS
+        can be vertical, horizontal, diagonal, forwards, backwards (overlapping other words??)
+    Brute Force:
+        Array of arrays
+
+        Search each row till find X, then search all possible directions for M, if found search A, search s
+        I could be SUPER fucking lazy here, and pad the edgef the array with Z, so I don't have to care about oob
+        or just make sure numbers never negative, tbh.
