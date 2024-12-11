@@ -51,3 +51,31 @@ Day 4
         Search each row till find X, then search all possible directions for M, if found search A, search s
         I could be SUPER fucking lazy here, and pad the edgef the array with Z, so I don't have to care about oob
         or just make sure numbers never negative, tbh.
+Day 5
+    Rules X|Y
+    Means X MUST be before Y
+
+    Input: list of numbers
+    Initial thought:
+        
+        Grab number num,
+        grab all numbers before it
+            
+    For each number, build set of pages that must come after, set of pages that must come before it
+    
+    Num: [before], [after]
+    75: [47, 98], [12, 87]
+
+    75, 2, 1,87, 3,5
+
+    Brute forcing, just check each time, no technical need to do this though?
+    Does number HAVE to exist?
+
+    inefficient it 
+    
+    just build after?
+
+    X|Y
+
+    X: [Ys]
+    if get X, just assert that no numbers behind it are in Ys, that's all
