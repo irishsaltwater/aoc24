@@ -79,3 +79,69 @@ Day 5
 
     X: [Ys]
     if get X, just assert that no numbers behind it are in Ys, that's all
+
+    part 2:
+        UGH, fix the broken ones, really wanted it to not be this
+
+        first, save all broken ones
+
+        then...how order (lmao could just brute force it, try every variant)
+        lets be slightly better
+
+        have x boxes, length of update
+
+        for each number, I know the numbers that must be after it (it's in the dict)
+
+        for each number, check numbers before it, if any in rules_dict, need to move them to NUMBER + 1 index
+            instead, move number behind 
+        2, 4, 7, 5, 9
+
+        rule is 5|7
+                9:5
+        so then
+            move 7 immediately after 5 (index +1)
+            no move 5 before 7
+        2, 4, 5, 7, 9       
+        so then get to 9, 
+        5 is behind 9, but moving 5
+        making sure that everything that's in front of number should be
+        so move backwards, never undoes anything else?
+
+        for each  number, check what numbers are before it
+        for each number in dict that matches
+            move current number to match-1 index
+            nope, that also doesn't work, need to move number as far left as possible
+            hrm
+            order dict?
+        screw it, brute force
+
+        Actually sensible approach
+            when have number, know what needs to be ahead of it
+            move it immediately behind the left-most number of all numbers it needs to be behind
+            is that all? will doing that prevent any other rules from being broken?
+
+            build set of values in array (rather than iterating)
+
+            so, check 4 is valid, if not update return array
+            then check 9 is valid (not i+1 in response)
+            but need to check that value AGAINST response array
+            
+            5|9
+            5|4
+            3|5
+
+            4,9,5,2,3
+                - find left most number in array that's in rules for 5 ( which is 4)
+            5,4,9,2,3
+                - find left most number in array that's in rules for 3 (Which is 5)
+            3,5,4,9,2,3
+
+            Have to come back to this one
+
+Day 6
+    Read in map
+    just move through it, replacing each step location with x, until out of bounds
+    once out of bounds, go through array again, counting X
+
+
+
