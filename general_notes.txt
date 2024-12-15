@@ -163,4 +163,17 @@ Day 6
             when step, check if next location would be obstruction, record hit AND direction facing
         otherwise guard will eventually leave
 
+Day 7
+    answer: set of numbers 
+    using + and *, determine which lines can be made to be correct
+    if made to be correct, then add answer to sum of answers
 
+    Note: order of operations not apply, just goes left to right
+
+    input:
+        answer : numb1 gap numb2 gap numb3
+
+        so, have, gap gap
+        try every variant of + and * in gaps
+        (where have we done this before?)
+        
