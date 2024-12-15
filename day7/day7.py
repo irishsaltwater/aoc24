@@ -1,7 +1,7 @@
 import os
 import itertools
 
-allowed_operations = '+*'
+allowed_operations = '+*|' # added | for part 2
 
 def generate_op_lists(size, operations):
     ops = list(operations)
@@ -38,6 +38,10 @@ def part_one():
                         running_total = running_total + numbers[index+1]
                     if current_op == '*':
                         running_total = running_total * numbers[index+1]
+                    if current_op == '|':
+                        # just combine left and right to new number
+                        running_total = int(str(running_total) + str(numbers[index+1]))
+
                 
                 # Have applied all operations in current set
                 if running_total == sum:
@@ -45,7 +49,7 @@ def part_one():
                     break # no need to continue checking this line
 
     print("Complete, total of sums that can be fixed: " + str(total_calibration_result)) # 2437272016585 # lol, I assumed that was wrong and almost didn't check it
-
+    # part two: 162987117690649
 
 
 part_one()
