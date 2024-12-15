@@ -143,5 +143,24 @@ Day 6
     just move through it, replacing each step location with x, until out of bounds
     once out of bounds, go through array again, counting X
 
+    How many places can add obstruction to get guard stuck in a loop
+    Fuck me how is this supposed to go?
+    Can't brute force this one (well ok I could but I don't want to)
+    WHat's the algo here?
+        How supposed to know ahead of time what causes a loop?
+
+        Ok, so it HAS to be somewhere that the guard walks
+        that narrows down the possible locations that could contain a new obstruction
+        and if guard bumps against it twice, know there's an infinite loop
+            if guard doesn't hit it twice, they will just leave area
+        is there some other algo there?
+
+    so, run guard through once
+    For every X, EXCEPT STARTING LOCATION, place obstruction
+        run guard through again,
+            if guard hits same side of obstruction twice, know its a loop
+            how test tht
+            when step, check if next location would be obstruction, record hit AND direction facing
+        otherwise guard will eventually leave
 
 
